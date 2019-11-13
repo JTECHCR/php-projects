@@ -34,7 +34,7 @@
         echo "<p> We will reply to $email as soon as we can</p>";
       } else {
         echo "<h1>Error Adding Details</h1>";
-        echo "Error description: " . mysqli_error($connection) . "<br";
+        echo "Error description: " . mysqli_error($connection) . "<br>";
       }
       echo "<button type=button onclick='javascript:history.back()'>Back</button>";
       // close the connection

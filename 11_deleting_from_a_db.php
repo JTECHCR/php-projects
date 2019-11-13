@@ -23,7 +23,7 @@
       $row_count = mysqli_num_rows($result);?>
       <?php echo "There are <b>$row_count</b> item(s) in the fridge";?>
     <form action='11_deletion.php' method='post'>
-      <select>
+      <select name='food'>
       <?php
       while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
         echo "<option value=".$row['itemID'].">".$row['itemName']."</option>";
